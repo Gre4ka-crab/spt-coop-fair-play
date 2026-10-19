@@ -1,0 +1,72 @@
+{
+  "module": {
+    "id": "fair-play",
+    "name": "Coop Fair Play",
+    "repository": "spt-coop-fair-play",
+    "roles": [
+      "backend",
+      "human"
+    ],
+    "sources": [
+      "ClientFairPlay",
+      "FairPlayServer",
+      "ClientFairPlayAudit"
+    ],
+    "active_sources": [
+      "ClientFairPlay",
+      "FairPlayServer"
+    ],
+    "tests": [
+      "ClientFairPlay.Tests",
+      "FairPlayServer.Tests",
+      "FairPlayNative.Tests",
+      "HeadlessLobby.Tests"
+    ],
+    "locks": [
+      "fairplay-server.production.lock.json"
+    ],
+    "responsibility": "Headless admission, серверные правила рейда и ограничения поддерживаемых клиентских настроек"
+  },
+  "shared_sources": [
+    {
+      "path": "src/Infrastructure/ApprovedFikaCore.cs",
+      "sha256": "eabf9e61ec6c7f58c37f8b0856efe40ac2abf1cc78d96bcb73252df9d3b5d9f0",
+      "owner": "spt-coop-runtime-contracts"
+    },
+    {
+      "path": "src/Infrastructure/OwnedConsoleMode.cs",
+      "sha256": "1c83a7646d8c912edf3e67288105bc73ad3f621b325aaf6618306ddf947201f5",
+      "owner": "spt-coop-runtime-contracts"
+    },
+    {
+      "path": "src/Infrastructure/PinnedLocalHttp.cs",
+      "sha256": "4b8f2ab83fab92299c5d523ddea385c57013b0d786df48cb36c10ff2d5ca3710",
+      "owner": "spt-coop-runtime-contracts"
+    },
+    {
+      "path": "src/Infrastructure/TtdResources.cs",
+      "sha256": "1691f9451af8fc1cfd196a3496cdeeebaed2ed31e41be21e9d301feb5baafcfa",
+      "owner": "spt-coop-runtime-contracts"
+    },
+    {
+      "path": "src/Infrastructure/WindowsConsoleSignal.cs",
+      "sha256": "dfe4aa663109041d54e3d8a5deac7b7cf67b4977accbc51f06db2d352fe3f34a",
+      "owner": "spt-coop-runtime-contracts"
+    },
+    {
+      "path": "src/Infrastructure/WindowsProcessIdentity.cs",
+      "sha256": "fece52429b3a6c667622511920f4abcfacbb914c79ed7fd478b9821787365707",
+      "owner": "spt-coop-runtime-contracts"
+    }
+  ],
+  "normalized_build_projects": [
+    "tests/FairPlayNative.Tests/FairPlayNative.Tests.csproj",
+    "tests/FairPlayServer.Tests/FairPlayServer.Tests.csproj",
+    "tests/HeadlessLobby.Tests/HeadlessLobby.Tests.csproj",
+    "src/ClientFairPlay/ClientFairPlay.csproj",
+    "src/ClientFairPlayAudit/ClientFairPlayAudit.csproj",
+    "src/FairPlayServer/FairPlayServer.csproj"
+  ],
+  "runtime_code_changes": false,
+  "origin": "Workspace source snapshot after verified project backup; no vendor/game source imported"
+}

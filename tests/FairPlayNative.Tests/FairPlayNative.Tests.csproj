@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+ <ItemGroup><ProjectReference Include="../../src/FairPlayServer/FairPlayServer.csproj"/><FrameworkReference Include="Microsoft.AspNetCore.App"/></ItemGroup>
+ <ItemGroup>
+  <Reference Include="SPTarkov.Server.Core" HintPath="$(GameRoot)/SPT_Runtime/SPTarkov.Server.Core.dll" Private="true"/>
+  <Reference Include="SPTarkov.Common" HintPath="$(GameRoot)/SPT_Runtime/SPTarkov.Common.dll" Private="true"/>
+  <Reference Include="SPTarkov.DI" HintPath="$(GameRoot)/SPT_Runtime/SPTarkov.DI.dll" Private="true"/>
+  <Reference Include="FikaServer" HintPath="$(GameRoot)/SPT_Runtime/user/mods/fika-server/FikaServer.dll" Private="true"/>
+  <Reference Include="FikaShared" HintPath="$(GameRoot)/SPT_Runtime/user/mods/fika-server/FikaShared.dll" Private="true"/>
+  <Reference Include="SemanticVersioning" HintPath="$(GameRoot)/SPT_Runtime/SemanticVersioning.dll" Private="true"/>
+  <Reference Include="0Harmony" HintPath="$(GameRoot)/SPT_Runtime/0Harmony.dll" Private="true"/>
+ </ItemGroup>
+</Project>

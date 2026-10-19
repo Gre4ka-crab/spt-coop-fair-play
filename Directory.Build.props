@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <GameRoot Condition="'$(GameRoot)'==''">$(SPT_GAME_ROOT)</GameRoot>
+    <Deterministic>true</Deterministic>
+    <RestoreIgnoreFailedSources>true</RestoreIgnoreFailedSources>
+  </PropertyGroup>
+</Project>

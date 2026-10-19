@@ -1,0 +1,1551 @@
+{
+  "version": 1,
+  "pins": {
+    "BepInEx/plugins/Fika/Fika.Core.dll": "5e62bc9c0adebd26e738dc9fd429ae24e8ecdf6f8b4ad65a2ad4ee323246395a",
+    "BepInEx/plugins/mpstark-dynamicmaps/DynamicMaps.dll": "c41507eb1edb6d6c8101314fedf9eb52c874c980e757cbc8348f084d2231b1b8",
+    "EscapeFromTarkov_Data/Managed/Unity.InternalAPIEngineBridge.003.dll": "924d2dd769984c1fd9ad9b4b156b009c577cccda1fcb1510d2ddd3ac28c4696b",
+    "EscapeFromTarkov_Data/Managed/Unity.VectorGraphics.dll": "07d7fbc3bd491b34bbed304d09d93062232249138a4d4785e5f6368ede8d75d6",
+    "BepInEx/plugins/AllQuestsCheckmarks/AllQuestsCheckmarks-Client.dll": "630c8507bdcfd77137af533b8c32e39740b5e3379a9973f26d94c10d09dd1743",
+    "BepInEx/plugins/AllQuestsCheckmarks/AllQuestsCheckmarks-Fika.dll": "9f9770aab839aa1fafb194bc3864645e00ab85f615ca041ce389c234755a869b",
+    "BepInEx/plugins/Tyfon.UIFixes.dll": "bdc4012b4dccbfbf5b39d4e4a7f0f5650d2b8b182febf2ca4028518f1061dca2",
+    "BepInEx/plugins/Tyfon.UIFixes.Net.dll": "15074075425d6a11c543f8f1be14b7c61f03b70b14cd01f754694f1715349c93"
+  },
+  "plugin_pins": {
+    "com.fika.core": "5e62bc9c0adebd26e738dc9fd429ae24e8ecdf6f8b4ad65a2ad4ee323246395a",
+    "com.mpstark.dynamicmaps": "c41507eb1edb6d6c8101314fedf9eb52c874c980e757cbc8348f084d2231b1b8",
+    "com.tyfon.uifixes": "bdc4012b4dccbfbf5b39d4e4a7f0f5650d2b8b182febf2ca4028518f1061dca2",
+    "com.zgfuedkx.allquestscheckmarks": "630c8507bdcfd77137af533b8c32e39740b5e3379a9973f26d94c10d09dd1743"
+  },
+  "settings": {
+    "com.mpstark.dynamicmaps": [
+      {
+        "section": "1. General",
+        "key": "Replace Map Screen",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Center on Player Hotkey",
+        "value": "None"
+      },
+      {
+        "section": "1. General",
+        "key": "Move Map Up Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Move Map Down Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Move Map Left Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Move Map Right Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Move Map Hotkey Speed",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Change Map Level Up Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Change Map Level Down Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Zoom Menu Map to Mouse",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Zoom Map In Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Zoom Map Out Hotkey",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Zoom Map Hotkey Speed",
+        "value": null
+      },
+      {
+        "section": "1. General",
+        "key": "Dump Info Hotkey",
+        "value": "None"
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Player Marker",
+        "value": "false"
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Friendly Player Markers",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Enemy Player Markers",
+        "value": "false"
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Scav Markers",
+        "value": "false"
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Boss Markers",
+        "value": "false"
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Locked Door Status",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Quests In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Extracts In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Extracts Status In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Transit Points In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Secret Extracts In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Dropped Backpack In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show wish listed items In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show BTR In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Airdrops In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Hidden Stashes In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Friendly Corpses In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Player-killed Corpses In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Friendly-killed Corpses In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Boss Corpses In Raid",
+        "value": null
+      },
+      {
+        "section": "2. Dynamic Markers",
+        "key": "Show Other Corpses In Raid",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Require a map in your inventory",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show PMCs",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show bosses",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show scavs",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show friendly PMCs",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show corpses",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show airdrops",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show wish listed loot items",
+        "value": null
+      },
+      {
+        "section": "3. Progression",
+        "key": "Intel level required to show hidden stashes",
+        "value": null
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Auto Select Level",
+        "value": "false"
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Auto Center On Player Marker",
+        "value": "false"
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Reset Zoom On Center",
+        "value": null
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Remember Map Position",
+        "value": null
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Centering On Player Zoom Level",
+        "value": null
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Main map zoom",
+        "value": null
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Peek at Map Shortcut",
+        "value": "None"
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Hold for Peek",
+        "value": null
+      },
+      {
+        "section": "4. In-Raid",
+        "key": "Peek Transition enabled",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Mini-map enabled",
+        "value": "false"
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Mini-map position",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Mini-map size horizontal",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Mini-map size vertical",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Mini-map offset horizontal",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Mini-map offset vertical",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Show or Hide the mini-map",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Mini map zoom",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Zoom in key bind",
+        "value": null
+      },
+      {
+        "section": "5. Mini-map",
+        "key": "Zoom out key bind",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Your player marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Bear marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Usec marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Scav marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Boss marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Airdrop marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Backpack marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Loot marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Killed corpse marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Killed boss corpse marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Killed by other corpse marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "BTR marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Extract default marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Extract open marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Extract closed marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Extract has requirements marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Transit point marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Secret exfil point marker color",
+        "value": null
+      },
+      {
+        "section": "6. Marker Colors",
+        "key": "Hidden stash marker color",
+        "value": null
+      },
+      {
+        "section": "7. External Mod Support",
+        "key": "Show Heli Crash Marker",
+        "value": null
+      }
+    ],
+    "com.fika.core": [
+      {
+        "section": "Advanced",
+        "key": "Show Official Version",
+        "value": null
+      },
+      {
+        "section": "Advanced",
+        "key": "Developer Mode",
+        "value": "false"
+      },
+      {
+        "section": "Advanced",
+        "key": "No AI",
+        "value": "false"
+      },
+      {
+        "section": "Advanced",
+        "key": "No Loot",
+        "value": "false"
+      },
+      {
+        "section": "Advanced",
+        "key": "Player Load Priority",
+        "value": null
+      },
+      {
+        "section": "Advanced",
+        "key": "Max Bundle Lock",
+        "value": null
+      },
+      {
+        "section": "Advanced",
+        "key": "IK Cull Distance",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Auto Use Headless",
+        "value": "true"
+      },
+      {
+        "section": "Coop",
+        "key": "Show Feed",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Auto Extract",
+        "value": "false"
+      },
+      {
+        "section": "Coop",
+        "key": "Show Extract Message",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Extract Key",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Show In-Game Player List",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Enable Chat",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Chat Key",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Enable Online Players",
+        "value": null
+      },
+      {
+        "section": "Coop",
+        "key": "Online Players Scale",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Show Player Name Plates",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Hide Health Bar",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Show HP% instead of bar",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Show Effects",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Show Player Faction Icon",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Hide Name Plate in Optic",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Name Plates Use Optic Zoom",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Decrease Opacity In Peripheral",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Name Plate Scale",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Opacity in ADS",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Max Distance to Show",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Minimum Opacity",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Use Occlusion",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Full Health Color",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Low Health Color",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Name Plate Text Color",
+        "value": null
+      },
+      {
+        "section": "Coop | Name Plates",
+        "key": "Show Broken Limbs",
+        "value": null
+      },
+      {
+        "section": "Coop | Quest Sharing",
+        "key": "Quest Types",
+        "value": null
+      },
+      {
+        "section": "Coop | Quest Sharing",
+        "key": "Show Notifications",
+        "value": null
+      },
+      {
+        "section": "Coop | Quest Sharing",
+        "key": "Easy Kill Conditions",
+        "value": "false"
+      },
+      {
+        "section": "Coop | Quest Sharing",
+        "key": "Shared Kill Experience",
+        "value": "false"
+      },
+      {
+        "section": "Coop | Quest Sharing",
+        "key": "Shared Boss Experience",
+        "value": "false"
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping System",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Button",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Color",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Size",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Time",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Play Ping Animation",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Show Ping During Optics",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Use Optic Zoom",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Scale With Distance",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Minimum Opacity",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Show Ping Range",
+        "value": null
+      },
+      {
+        "section": "Coop | Pinging",
+        "key": "Ping Sound",
+        "value": null
+      },
+      {
+        "section": "Coop | Revival",
+        "key": "Give Up Key",
+        "value": null
+      },
+      {
+        "section": "Coop | Debug",
+        "key": "Free Camera Button",
+        "value": null
+      },
+      {
+        "section": "Coop | Debug",
+        "key": "AZERTY Mode",
+        "value": null
+      },
+      {
+        "section": "Coop | Debug",
+        "key": "Drone Mode",
+        "value": null
+      },
+      {
+        "section": "Coop | Debug",
+        "key": "Keybind Overlay",
+        "value": null
+      },
+      {
+        "section": "Gameplay",
+        "key": "Disable Bot Metabolism",
+        "value": "false"
+      },
+      {
+        "section": "Gameplay",
+        "key": "Strict Inventory Sync",
+        "value": "true"
+      }
+    ],
+    "com.tyfon.uifixes": [
+      {
+        "section": "A. Interface",
+        "key": "Keep Messages Window Open",
+        "value": "true"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Autofill Quest Item Turn-ins",
+        "value": "true"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Context Menu Flyout on Right",
+        "value": "true"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Allow Context Menu While Searching",
+        "value": "false"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Context Menu Font Size",
+        "value": "11"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Hide Long Quickbar Keybinds",
+        "value": "true"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Server Operation Queue Time",
+        "value": "15"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Mail Read Queue Time",
+        "value": "5"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Limit Nonstandard Drags",
+        "value": "true"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Restore Async Scroll Positions",
+        "value": "true"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Remove Default Mag Preset Name",
+        "value": "true"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Mag Presets Context Menu on Bullets",
+        "value": "false"
+      },
+      {
+        "section": "A. Interface",
+        "key": "Show Group Panel",
+        "value": "false"
+      },
+      {
+        "section": "B. Dialogs",
+        "key": "Show Weapon Preset Confirmation Dialog",
+        "value": "OnClose"
+      },
+      {
+        "section": "B. Dialogs",
+        "key": "One Click Save Weapon Presets",
+        "value": "true"
+      },
+      {
+        "section": "B. Dialogs",
+        "key": "Show Stock Weapon Presets",
+        "value": "true"
+      },
+      {
+        "section": "B. Dialogs",
+        "key": "Show Transfer Items Confirmation Dialog",
+        "value": "Never"
+      },
+      {
+        "section": "B. Dialogs",
+        "key": "Click Outside of Dialogs to Close",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Queue Held Inputs",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Use Toggle/Hold Aiming",
+        "value": "false"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Use Toggle/Hold Interaction",
+        "value": "false"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Use Toggle/Hold Sprint",
+        "value": "false"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Use Toggle/Hold Tactical Device",
+        "value": "false"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Use Toggle/Hold Headlight",
+        "value": "false"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Use Toggle/Hold Goggles",
+        "value": "false"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Prevent Scope Zoom in Inventory",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Variable Scope Fix (requires restart)",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Modify Equipped Weapons",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Modify Weapons In Raid",
+        "value": "Never"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Modify Equipped Armor Plates In Raid",
+        "value": "false"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Hide Unimplemented Door Actions",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Enable Load Ammo Context Menu",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Quickbind Matching Grenade After Throw",
+        "value": "true"
+      },
+      {
+        "section": "C. Gameplay",
+        "key": "Quickbind Matching Consumable After Use",
+        "value": "true"
+      },
+      {
+        "section": "D. Mouse",
+        "key": "Unlock Cursor",
+        "value": "true"
+      },
+      {
+        "section": "D. Mouse",
+        "key": "Enable Weapon Preview Zoom",
+        "value": "true"
+      },
+      {
+        "section": "D. Mouse",
+        "key": "Enable Edit Weapon Pan",
+        "value": "true"
+      },
+      {
+        "section": "D. Mouse",
+        "key": "Enable Character Preview Pan/Zoom",
+        "value": "true"
+      },
+      {
+        "section": "D. Mouse",
+        "key": "Mousewheel Scrolling Speed",
+        "value": "1"
+      },
+      {
+        "section": "D. Mouse",
+        "key": "Use Different Scrolling Speed in Raid",
+        "value": "false"
+      },
+      {
+        "section": "D. Mouse",
+        "key": "Mousewheel Scrolling Speed in Raid",
+        "value": "1"
+      },
+      {
+        "section": "E. Interface Keybinds",
+        "key": "Enable Home/End Keys",
+        "value": "true"
+      },
+      {
+        "section": "E. Interface Keybinds",
+        "key": "Rebind PageUp/PageDown (requires restart)",
+        "value": "true"
+      },
+      {
+        "section": "E. Interface Keybinds",
+        "key": "Highlight Search Box",
+        "value": "F + LeftControl"
+      },
+      {
+        "section": "E. Interface Keybinds",
+        "key": "Block Keybinds While Typing",
+        "value": "true"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Inspect Shortcut",
+        "value": "I"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Open Shortcut",
+        "value": "O"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Examine/Interact Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Top Up Ammo Shortcut",
+        "value": "T"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Use Item Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Use Item (All) Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Reload Weapon Shortcut",
+        "value": "R"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Unload Mag/Ammo Shortcut",
+        "value": "U"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Install Mod Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Uninstall Mod Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Unpack Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Filter by Item Shortcut",
+        "value": "F"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Linked Search Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Required Search Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Add Offer Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Pin Item Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Lock Item Shortcut",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Select All of Type",
+        "value": "A + LeftControl"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Transfer to/from Sorting Table",
+        "value": ""
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Rotate Item",
+        "value": "R"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Shift-Click to Sorting Table",
+        "value": "true"
+      },
+      {
+        "section": "F. Item Keybinds",
+        "key": "Block Text Inputs on Item Mouseover",
+        "value": "true"
+      },
+      {
+        "section": "G. Gameplay Keybinds",
+        "key": "Change Quickbound Tactical Mode",
+        "value": "Shift"
+      },
+      {
+        "section": "H. Multiselect",
+        "key": "Enable Multiselect",
+        "value": "true"
+      },
+      {
+        "section": "H. Multiselect",
+        "key": "Enable Multiselect In Raid",
+        "value": "true"
+      },
+      {
+        "section": "H. Multiselect",
+        "key": "Enable Multiselect with Shift-Click",
+        "value": "true"
+      },
+      {
+        "section": "H. Multiselect",
+        "key": "Selection Box Key",
+        "value": "Mouse0"
+      },
+      {
+        "section": "H. Multiselect",
+        "key": "Multiselect Item Placement",
+        "value": "OriginalSpacing"
+      },
+      {
+        "section": "H. Multiselect",
+        "key": "Merge stacks on quick move",
+        "value": "true"
+      },
+      {
+        "section": "H. Multiselect",
+        "key": "Show Multiselect Debug",
+        "value": "false"
+      },
+      {
+        "section": "I. Item Swapping",
+        "key": "Enable In-Place Item Swapping",
+        "value": "true"
+      },
+      {
+        "section": "I. Item Swapping",
+        "key": "Show Swap Grid Highlights",
+        "value": "true"
+      },
+      {
+        "section": "I. Item Swapping",
+        "key": "Reload Magazines In-Place",
+        "value": "true"
+      },
+      {
+        "section": "I. Item Swapping",
+        "key": "Always Reload Magazines In-Place",
+        "value": "false"
+      },
+      {
+        "section": "I. Item Swapping",
+        "key": "Swap with Incompatible Containers",
+        "value": "false"
+      },
+      {
+        "section": "I. Item Swapping",
+        "key": "Force Swap Key",
+        "value": "Alt"
+      },
+      {
+        "section": "J. Item Stacking",
+        "key": "Combine Stacks Before Sorting",
+        "value": "true"
+      },
+      {
+        "section": "J. Item Stacking",
+        "key": "Autostack Items with FiR Items",
+        "value": "false"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Allow Adding to Unsearched Containers",
+        "value": "false"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Standardize Grid Order",
+        "value": "false"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Prioritize Smaller Slots (requires restart)",
+        "value": "false"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Highlight Quick Move Target",
+        "value": "true"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Highlight Quick Equip Target",
+        "value": "true"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Open All Context Flyout",
+        "value": "true"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Prioritize Tags Over Names",
+        "value": "true"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Tag Backpacks (requires restart)",
+        "value": "true"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Tag Vests (requires restart)",
+        "value": "true"
+      },
+      {
+        "section": "K. Containers",
+        "key": "Show Border for Oversized Items",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Show Total Stats on Mods",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Highlight Compatible Slots",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Highlight Filled Slots",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Remember Window Size",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Lock Inspect Preview Size",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Auto-expand to Fit Description",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Snap Window Left shortcut",
+        "value": "LeftArrow"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Snap Window Right shortcut",
+        "value": "RightArrow"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Stats Font Size",
+        "value": "11"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Description Font Size",
+        "value": "13"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Style Attribute Panels",
+        "value": "true"
+      },
+      {
+        "section": "L. Inspect Windows",
+        "key": "Add Left/Right Buttons on Containers",
+        "value": "true"
+      },
+      {
+        "section": "M. Stash",
+        "key": "Search in Stash Context Menu",
+        "value": "true"
+      },
+      {
+        "section": "M. Stash",
+        "key": "Synchronize Stash Scroll Position",
+        "value": "false"
+      },
+      {
+        "section": "M. Stash",
+        "key": "Auto-open Sorting Table",
+        "value": "false"
+      },
+      {
+        "section": "M. Stash",
+        "key": "Show GP Coins in Currency",
+        "value": "true"
+      },
+      {
+        "section": "N. Trading",
+        "key": "Autoswitch Buy/Sell when Trading",
+        "value": "true"
+      },
+      {
+        "section": "N. Trading",
+        "key": "Show Daily Quest Icon on Traders",
+        "value": "true"
+      },
+      {
+        "section": "N. Trading",
+        "key": "Show Hand Over Items Icon on Traders",
+        "value": "true"
+      },
+      {
+        "section": "N. Trading",
+        "key": "Show Hand Over Items Icon on Quests",
+        "value": "true"
+      },
+      {
+        "section": "N. Trading",
+        "key": "Remember Last Trader",
+        "value": "false"
+      },
+      {
+        "section": "N. Trading",
+        "key": "Show Out of Stock Toggle",
+        "value": "true"
+      },
+      {
+        "section": "N. Trading",
+        "key": "Purchase Dialog ALL Shortcut",
+        "value": "A"
+      },
+      {
+        "section": "O. Flea Market",
+        "key": "Show Filter Back Button",
+        "value": "true"
+      },
+      {
+        "section": "O. Flea Market",
+        "key": "Show Barter Icons",
+        "value": "true"
+      },
+      {
+        "section": "O. Flea Market",
+        "key": "Enable Linked Slot Search",
+        "value": "true"
+      },
+      {
+        "section": "O. Flea Market",
+        "key": "Show Required Quest for Locked Offers",
+        "value": "true"
+      },
+      {
+        "section": "O. Flea Market",
+        "key": "Auto-expand Categories",
+        "value": "true"
+      },
+      {
+        "section": "O. Flea Market",
+        "key": "Clear Filters on Search",
+        "value": "true"
+      },
+      {
+        "section": "P. Add Offer",
+        "key": "Autopopulate Offer Price",
+        "value": "None"
+      },
+      {
+        "section": "P. Add Offer",
+        "key": "Update Offer Price on Bulk",
+        "value": "true"
+      },
+      {
+        "section": "P. Add Offer",
+        "key": "Keep Add Offer Window Open",
+        "value": "false"
+      },
+      {
+        "section": "P. Add Offer",
+        "key": "Keep Add Offer Window Open: Ignore Max Offers",
+        "value": "false"
+      },
+      {
+        "section": "P. Add Offer",
+        "key": "Remember Add Offer Autoselect Similar",
+        "value": "true"
+      },
+      {
+        "section": "Q. Hideout",
+        "key": "Hideout Upgrade Wishlisting",
+        "value": "Normal"
+      },
+      {
+        "section": "Q. Hideout",
+        "key": "Hideout Upgrade Wishlist Respects FiR",
+        "value": "true"
+      },
+      {
+        "section": "Q. Hideout",
+        "key": "Remember Craft Search",
+        "value": "false"
+      },
+      {
+        "section": "R. Weapons",
+        "key": "Show Internal Mag (Re)load Context Menu",
+        "value": "false"
+      },
+      {
+        "section": "R. Weapons",
+        "key": "Show Internal Mag Load/Unload Ammo",
+        "value": "true"
+      },
+      {
+        "section": "R. Weapons",
+        "key": "Fully Disassemble",
+        "value": "true"
+      },
+      {
+        "section": "S. Inventory Windows",
+        "key": "Remember Inspect Windows",
+        "value": "false"
+      },
+      {
+        "section": "S. Inventory Windows",
+        "key": "Remember Open Containers",
+        "value": "true"
+      },
+      {
+        "section": "S. Inventory Windows",
+        "key": "Remember Inspect Position per Item",
+        "value": "true"
+      },
+      {
+        "section": "S. Inventory Windows",
+        "key": "Remember Container Position per Item",
+        "value": "true"
+      },
+      {
+        "section": "S. Inventory Windows",
+        "key": "Highlight Priority Window Border",
+        "value": "true"
+      }
+    ],
+    "com.zgfuedkx.allquestscheckmarks": [
+      {
+        "section": "1. General",
+        "key": "Include Collector quest (Fence)",
+        "value": "true"
+      },
+      {
+        "section": "1. General",
+        "key": "Include non-FiR quests",
+        "value": "true"
+      },
+      {
+        "section": "1. General",
+        "key": "Include loyalty regain quests",
+        "value": "false"
+      },
+      {
+        "section": "1. General",
+        "key": "Include unreachable quests",
+        "value": "false"
+      },
+      {
+        "section": "1. General",
+        "key": "Hide checkmark if have enough (in raid)",
+        "value": "false"
+      },
+      {
+        "section": "1. General",
+        "key": "Show only active quests",
+        "value": "false"
+      },
+      {
+        "section": "1. General",
+        "key": "Include items in PMC inventory (in raid)",
+        "value": "false"
+      },
+      {
+        "section": "1. General",
+        "key": "Mark squad members quests",
+        "value": "true"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Checkmark color",
+        "value": "BF00FFFF"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Checkmark color (non-FIR)",
+        "value": "73264DFF"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Collector color",
+        "value": "BF00FFFF"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Use different color if have enough",
+        "value": "false"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Have enough color",
+        "value": "00FF00FF"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Use custom quest checkmark color",
+        "value": "false"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Custom quest color",
+        "value": "FFEB6DFF"
+      },
+      {
+        "section": "2. Colors",
+        "key": "Checkmark color (squad members)",
+        "value": "FF3333FF"
+      },
+      {
+        "section": "3. Text",
+        "key": "Use bullet points",
+        "value": "true"
+      },
+      {
+        "section": "3. Text",
+        "key": "Use custom text colors",
+        "value": "false"
+      },
+      {
+        "section": "3. Text",
+        "key": "Custom text color - active quests",
+        "value": "DD831AFF"
+      },
+      {
+        "section": "3. Text",
+        "key": "Custom text color - future quests",
+        "value": "D24DFFFF"
+      },
+      {
+        "section": "3. Text",
+        "key": "Custom text color - squad quests",
+        "value": "FFC299FF"
+      },
+      {
+        "section": "9. Debug",
+        "key": "Debug logs",
+        "value": "false"
+      },
+      {
+        "section": "9. Debug",
+        "key": "Reload quests data",
+        "value": ""
+      }
+    ]
+  },
+  "freeze_defaults": [
+    "com.mpstark.dynamicmaps",
+    "com.fika.core",
+    "com.tyfon.uifixes",
+    "com.zgfuedkx.allquestscheckmarks"
+  ],
+  "unlocked_sections": {
+    "com.fika.core": [
+      "Network",
+      "Hidden"
+    ]
+  }
+}

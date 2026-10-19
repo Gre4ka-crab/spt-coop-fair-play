@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><Version>0.2.1</Version><Deterministic>true</Deterministic></PropertyGroup>
+ <ItemGroup>
+  <Reference Include="SPTarkov.Server.Core" HintPath="$(GameRoot)/SPT_Runtime/SPTarkov.Server.Core.dll" Private="false"/>
+  <Reference Include="SPTarkov.Common" HintPath="$(GameRoot)/SPT_Runtime/SPTarkov.Common.dll" Private="false"/>
+  <Reference Include="SPTarkov.DI" HintPath="$(GameRoot)/SPT_Runtime/SPTarkov.DI.dll" Private="false"/>
+  <Reference Include="FikaServer" HintPath="$(GameRoot)/SPT_Runtime/user/mods/fika-server/FikaServer.dll" Private="false"/>
+  <Reference Include="FikaShared" HintPath="$(GameRoot)/SPT_Runtime/user/mods/fika-server/FikaShared.dll" Private="false"/>
+  <Reference Include="SemanticVersioning" HintPath="$(GameRoot)/SPT_Runtime/SemanticVersioning.dll" Private="false"/>
+  <Reference Include="0Harmony" HintPath="$(GameRoot)/SPT_Runtime/0Harmony.dll" Private="false"/>
+ </ItemGroup>
+ <ItemGroup><EmbeddedResource Include="client-pin.json"/></ItemGroup>
+</Project>

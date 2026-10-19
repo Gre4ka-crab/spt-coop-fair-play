@@ -1,0 +1,54 @@
+using PrivateStack.FairPlay;
+using Fika.Core.Networking.Models.Headless;
+using System.Text.Json;
+
+int passed = 0;
+void Check(bool ok, string name) { if (!ok) throw new Exception(name); passed++; Console.WriteLine("PASS " + name); }
+HeadlessAvailability.Host A() => new("aaaaaaaaaaaaaaaaaaaaaaaa", "First");
+HeadlessAvailability.Host B() => new("bbbbbbbbbbbbbbbbbbbbbbbb", "Second");
+var p = new HeadlessAvailability();
+Check(!p.CanHost(0) && !p.CanStart(0), "initial and unverified lobby blocks both buttons");
+p.Receive(Array.Empty<HeadlessAvailability.Host>(), 100);
+Check(!p.CanHost(101), "zero free hosts cannot enable create");
+p.Receive(new[] { A() }, 200);
+Check(p.CanHost(200) && p.CanStart(200) && p.SelectedId == A().Id, "single host selected after real response");
+Check(p.CanHost(5199) && !p.CanHost(5200) && !p.CanHost(199), "snapshot expiry and backwards clock block create");
+p.Fail("offline"); Check(!p.CanHost(300), "network failure immediately invalidates previous success");
+p.Receive(new[] { A() }, 400); Check(p.CanHost(400), "network recovery needs a new successful response");
+Check(p.Begin(401) && !p.Begin(402) && !p.CanHost(402), "double click emits one confirmation intent");
+Check(!p.Confirmed(A().Id, 403), "old pre-click snapshot cannot authorize start");
+p.Receive(new[] { A() }, 404); Check(p.Confirmed(A().Id, 404), "selected host must survive fresh confirmation");
+p.Release("busy"); Check(!p.CanHost(405), "rejected request requires another successful probe");
+p.Receive(new[] { B(), A() }, 500);
+p.Select(B().Id); Check(p.SelectedId == B().Id && p.CanStart(500), "two hosts permit selecting the second");
+p.Receive(new[] { A(), B() }, 501); Check(p.SelectedId == B().Id, "reordered response preserves ID rather than dropdown index");
+Check(p.Begin(502), "second headless confirmation begins");
+p.Receive(new[] { A() }, 503); Check(!p.Confirmed(B().Id, 503) && p.SelectedId == null, "disappearing chosen host never silently routes to another");
+p.Release("gone"); p.Receive(new[] { A() }, 504);
+Check(p.CanHost(504) && !p.CanStart(504), "remaining host needs explicit new selection after chosen host disappeared");
+p.Select(A().Id); Check(p.CanStart(504), "explicit re-selection recovers after disappearance");
+bool denied = false; try { p.Receive(new[] { A(), A() }, 505); } catch (InvalidOperationException) { denied = true; }
+Check(denied && !p.CanHost(505), "duplicate host IDs are malformed and fail closed");
+p.Receive(new[] { B() }, 600); p.Select(B().Id); p.Begin(601); p.Release("uncertain delivery", true);
+p.Receive(new[] { A(), B() }, 602); Check(!p.CanHost(602), "uncertain dispatched request does not allow automatic second start");
+var reopened = new HeadlessAvailability(); reopened.Receive(new[] { B(), A() }, 700);
+Check(reopened.CanHost(700) && !reopened.CanStart(700), "new two-host lobby needs an explicit choice");
+reopened.Select(B().Id); reopened.Begin(701); reopened.Release("cancelled before dispatch"); reopened.Receive(new[] { A(), B() },702);
+Check(!reopened.Confirmed(B().Id,702), "late read after preflight cancellation cannot authorize a raid");
+
+var native = new StartHeadlessResponse { MatchId = B().Id };
+var ok = await SafeHeadlessStart.Normalize(Task.FromResult(native), B().Id);
+Check(ok.MatchId == B().Id && string.IsNullOrEmpty(ok.Error), "actual Fika response DTO accepts exact selected match");
+var busy = await SafeHeadlessStart.Normalize(Task.FromResult(new StartHeadlessResponse { Error = "busy" }), B().Id);
+Check(busy.Error == "busy", "native busy/error is retained without local fallback");
+var mismatch = await SafeHeadlessStart.Normalize(Task.FromResult(native), A().Id);
+Check(mismatch.Error == SafeHeadlessStart.UncertainMessage, "wrong selected match cannot be reported as success");
+var empty = await SafeHeadlessStart.Normalize(Task.FromResult(new StartHeadlessResponse()), A().Id);
+Check(empty.Error == SafeHeadlessStart.UncertainMessage, "null match and null error cannot strand a success spinner");
+var fault = await SafeHeadlessStart.Normalize(Task.FromException<StartHeadlessResponse>(new IOException("private endpoint")), A().Id);
+Check(fault.Error == SafeHeadlessStart.UncertainMessage && !fault.Error.Contains("private endpoint"), "network exception becomes visible safe error, not async-void exception");
+var pending = new TaskCompletionSource<StartHeadlessResponse>();
+var timeout = await SafeHeadlessStart.Normalize(pending.Task, A().Id, Task.CompletedTask);
+Check(timeout.Error == SafeHeadlessStart.UncertainMessage, "lost acknowledgement has bounded wait and uncertain state");
+pending.SetException(new IOException("late error"));
+Console.WriteLine(JsonSerializer.Serialize(new { status = "PASS_LOBBY_POLICY_AND_NATIVE_DTO_NOT_UNITY_OR_TWO_REAL_HEADLESSES", passed }));

@@ -1,0 +1,5 @@
+<Project>
+  <Target Name="RequireLocalGameRoot" BeforeTargets="ResolveAssemblyReferences" Condition="'$(GameRoot)'=='' and '$(MSBuildProjectName)'!='MonoLayoutAudit.Fixtures'">
+    <Error Text="Set SPT_GAME_ROOT or -p:GameRoot to your own legitimate SPT installation. Game assemblies are never distributed." />
+  </Target>
+</Project>

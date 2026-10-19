@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><LangVersion>latest</LangVersion><Version>0.2.1</Version><Deterministic>true</Deterministic></PropertyGroup>
+ <PropertyGroup Condition="Exists('C:/Program Files/dotnet/packs/NETStandard.Library.Ref/2.1.0')"><NetCoreTargetingPackRoot>C:/Program Files/dotnet/packs</NetCoreTargetingPackRoot></PropertyGroup>
+ <ItemGroup>
+  <Reference Include="BepInEx" HintPath="$(GameRoot)/BepInEx/core/BepInEx.dll" Private="false"/>
+  <Reference Include="0Harmony" HintPath="$(GameRoot)/BepInEx/core/0Harmony.dll" Private="false"/>
+  <Reference Include="UnityEngine" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/UnityEngine.dll" Private="false"/>
+  <Reference Include="UnityEngine.CoreModule" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/UnityEngine.CoreModule.dll" Private="false"/>
+  <Reference Include="UnityEngine.IMGUIModule" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/UnityEngine.IMGUIModule.dll" Private="false"/>
+  <Reference Include="UnityEngine.UI" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/UnityEngine.UI.dll" Private="false"/>
+  <Reference Include="Unity.TextMeshPro" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/Unity.TextMeshPro.dll" Private="false"/>
+  <Reference Include="UnityEngine.UIModule" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/UnityEngine.UIModule.dll" Private="false"/>
+  <Reference Include="Fika.Core" HintPath="$(GameRoot)/BepInEx/plugins/Fika/Fika.Core.dll" Private="false"/>
+  <Reference Include="Assembly-CSharp" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/Assembly-CSharp.dll" Private="false"/>
+  <Reference Include="Newtonsoft.Json" HintPath="$(GameRoot)/EscapeFromTarkov_Data/Managed/Newtonsoft.Json.dll" Private="false"/>
+ </ItemGroup>
+ <ItemGroup><EmbeddedResource Include="policy.json"/></ItemGroup>
+</Project>

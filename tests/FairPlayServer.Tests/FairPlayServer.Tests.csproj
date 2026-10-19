@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+ <ItemGroup><Compile Include="../../src/FairPlayServer/RaidRules.cs" Link="RaidRules.cs"/><Compile Include="../../src/FairPlayServer/ModRules.cs" Link="ModRules.cs"/></ItemGroup>
+ <ItemGroup>
+  <Reference Include="SPTarkov.Server.Core" HintPath="$(GameRoot)/SPT_Runtime/SPTarkov.Server.Core.dll" Private="true"/>
+  <Reference Include="FikaServer" HintPath="$(GameRoot)/SPT_Runtime/user/mods/fika-server/FikaServer.dll" Private="true"/>
+  <Reference Include="FikaShared" HintPath="$(GameRoot)/SPT_Runtime/user/mods/fika-server/FikaShared.dll" Private="true"/>
+ </ItemGroup>
+</Project>
